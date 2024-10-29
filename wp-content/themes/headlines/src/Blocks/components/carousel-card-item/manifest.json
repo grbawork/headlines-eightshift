@@ -1,0 +1,84 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/component.json",
+	"componentName": "carousel-card-item",
+	"title": "Carousel: Card Item",
+	"componentClass": "carousel-card-item",
+	"example": {
+		"attributes": {
+			"carouselCardItemTagSize": "md-bold",
+			"carouselCardItemDescriptionSize": "2xs-regular",
+			"carouselCardItemTagContent": "Tag",
+			"carouselCardItemDescriptionContent": "Description"
+		}
+	},
+	"attributes": {
+		"carouselCardItemUrl": {
+			"type": "string"
+		},
+		"carouselCardItemRoundedCorners": {
+			"type": "boolean",
+			"default": true
+		},
+		"carouselCardItemBorder": {
+			"type": "boolean",
+			"default": true
+		},
+		"carouselCardItemBgColor": {
+			"type": "string",
+			"default": "white"
+		},
+		"carouselCardItemTagSize": {
+			"type": "string",
+			"default": "md-bold"
+		},
+		"carouselCardItemDescriptionSize": {
+			"type": "string",
+			"default": "2xs-regular"
+		}
+	},
+	"components": {
+		"image": "image",
+		"tag": "paragraph",
+		"description": "paragraph"
+	},
+	"options": {
+		"carouselCardItemBgColor": [
+			"black",
+			"white",
+			"blue-super-light"
+		]
+	},
+	"variables": {
+		"carouselCardItemRoundedCorners": {
+			"true": [
+				{
+					"variable": {
+						"carousel-card-item-border-radius": "0.625rem"
+					}
+				},
+				{
+					"breakpoint": "tablet",
+					"variable": {
+						"carousel-card-item-border-radius": "1.25rem"
+					}
+				}
+			]
+		},
+		"carouselCardItemBorder": {
+			"true": [
+				{
+					"variable": {
+						"carousel-card-item-border": "1px solid var(--global-colors-blue-mid)"
+					}
+				}
+			]
+		},
+		"carouselCardItemBgColor": [
+			{
+				"variable": {
+					"carousel-card-item-bg-color": "var(--global-colors-%value%)"
+				}
+			}
+		]
+	}
+}

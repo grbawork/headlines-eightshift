@@ -1,0 +1,72 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/block.json",
+	"blockName": "section-title",
+	"title": "Section title",
+	"description": "Section title block with custom settings.",
+	"category": "eightshift",
+	"icon": {
+	  "src": "es-blog-content-alt-2"
+	},
+	"keywords": [
+	  "section-title",
+	  "title"
+	],
+	"attributes": {
+		"sectionTitleAlign": {
+			"type": "string",
+			"default": "center"
+		}
+	},
+	"options": {
+		"sectionTitleAlign": [
+			{
+				"label": "Left",
+				"value": "left",
+				"icon": "textAlignLeft"
+			},
+			{
+				"label": "Center",
+				"value": "center",
+				"icon": "textAlignCenter"
+			},
+			{
+				"label": "Right",
+				"value": "right",
+				"icon": "textAlignRight"
+			}
+		]
+	},
+	"variables": {
+		"sectionTitleAlign": {
+			"left": [
+				{
+					"variable": {
+						"block-section-title-text-align": "left",
+						"block-section-title-content-align": "flex-start"
+					}
+				}
+			],
+			"center": [
+				{
+					"variable": {
+						"block-section-title-text-align": "center",
+						"block-section-title-content-align": "center"
+					}
+				}
+			],
+			"right": [
+				{
+					"variable": {
+						"block-section-title-text-align": "right",
+						"block-section-title-content-align": "flex-end"
+					}
+				}
+			]
+		}
+	},
+	"components": {
+		"intro": "paragraph",
+		"title": "heading",
+		"description": "paragraph"
+	}
+  }

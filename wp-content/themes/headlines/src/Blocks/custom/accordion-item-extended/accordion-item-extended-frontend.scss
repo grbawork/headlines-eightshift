@@ -1,0 +1,7 @@
+.block-accordion-item-extended {
+	&__trigger {
+		> * {
+			pointer-events: none;
+		}
+	}
+}

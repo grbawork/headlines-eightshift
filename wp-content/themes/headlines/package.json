@@ -1,0 +1,45 @@
+{
+	"name": "@eightshift/headlines",
+	"version": "1.0.0",
+	"description": "This repository contains all the tools you need to start building a modern WordPress project.",
+	"authors": [
+		{
+			"name": "Eightshift team",
+			"email": "team@eightshift.com",
+			"homepage": "https://eightshift.com/",
+			"role": "Developer / IT Manager"
+		}
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/infinum/headlines.git"
+	},
+	"bugs": {
+		"url": "https://github.com/infinum/headlines/issues"
+	},
+	"homepage": "https://github.com/infinum/headlines#readme",
+	"scripts": {
+		"lintStyle": "stylelint **/*.scss",
+		"lintJs": "eslint src/ assets/",
+		"lint": "npm run lintJs && npm run lintStyle && composer standards:check -- --filter=gitstaged",
+		"start": "webpack --progress --watch --mode development",
+		"build": "webpack --progress --mode production",
+		"test": "wp boilerplate"
+	},
+	"devDependencies": {
+		"husky": "^8.0.3",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
+	},
+	"dependencies": {
+		"@eightshift/frontend-libs": "^11.0.1",
+		"gsap": "^3.12.5",
+		"swiper": "^11.1.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run lint"
+		}
+	}
+}

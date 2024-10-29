@@ -1,0 +1,12 @@
+.block-section-title {
+	display: flex;
+	flex-direction: column;
+    padding: 4rem 0 3rem;
+
+	align-items: var(--block-section-title-content-align, center);
+	text-align: var(--block-section-title-text-align);
+
+	&__intro {
+		text-transform: uppercase;
+	}
+}

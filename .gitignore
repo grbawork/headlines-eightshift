@@ -1,0 +1,66 @@
+# Wordpress files
+wp-admin
+wp-includes
+/license.txt
+/readme.html
+/wp-activate.php
+/index.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config-sample.php
+/wp-config.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+
+# Content
+wp-content/*
+wp-content/themes/index.php
+!wp-content/themes/
+
+# Plugin exception.
+!wp-content/plugins
+wp-content/plugins/*
+
+# Ignore specific themes
+wp-content/themes/twenty*/
+
+# Mac OS custom attribute store and thumbnails
+*.DS_Store
+._*
+.env
+env.json
+
+# Error logs
+error_log.txt
+
+# Databases and exports
+latest_dump.tar.gz
+latest_dump
+
+# Deployment script leftovers
+bin/buildsecrets.json
+bin/composer.json
+bin/composer.lock
+bin/vendor
+local-secrets.json
+
+# VSCode config
+.vscode/
+
+# Mock files
+!/data/Illiad.html
+/data
+
+# Export files
+migration/
+migration-files/
+
+# VSC EditorConfig
+/.editorconfig

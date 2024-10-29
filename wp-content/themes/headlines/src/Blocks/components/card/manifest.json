@@ -1,0 +1,76 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/component.json",
+	"componentName": "card",
+	"title": "Card",
+	"componentClass": "card-simple",
+	"example": {
+		"attributes": {
+			"cardIntroContent": "This is intro",
+			"cardIntroSize": "h4:bold",
+			"cardIntroColor": "light",
+			"cardAlign": "left"
+		}
+	},
+	"attributes": {
+		"cardAlign": {
+			"type": "string",
+			"default": "left"
+		},
+		"cardHeadingSize": {
+			"type": "string",
+			"default": "h3:bold"
+		}
+	},
+	"options": {
+		"cardAlign": [
+			{
+				"label": "Left",
+				"value": "left",
+				"icon": "textAlignLeft"
+			},
+			{
+				"label": "Center",
+				"value": "center",
+				"icon": "textAlignCenter"
+			},
+			{
+				"label": "Right",
+				"value": "right",
+				"icon": "textAlignRight"
+			}
+		]
+	},
+	"components": {
+		"heading": "heading",
+		"paragraph": "paragraph",
+		"image": "image"
+	},
+	"variables": {
+		"cardAlign": {
+			"left": [
+				{
+					"variable": {
+						"block-card-text-align": "left",
+						"block-card-content-align": "flex-start"
+					}
+				}
+			],
+			"center": [
+				{
+					"variable": {
+						"block-card-text-align": "center",
+						"block-card-content-align": "center"
+					}
+				}
+			],
+			"right": [
+				{
+					"variable": {
+						"block-card-text-align": "right",
+						"block-card-content-align": "flex-end"
+					}
+				}
+			]
+		}
+	}
+}

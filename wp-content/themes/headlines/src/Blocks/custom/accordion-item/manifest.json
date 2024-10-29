@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/block.json",
+	"blockName": "accordion-item",
+	"title": "Accordion item",
+	"description" : "Accordion block with custom settings.",
+	"category": "eightshift",
+	"icon": {
+		"src": "es-accordion"
+	},
+	"keywords": [
+		"accordion",
+		"item"
+	],
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "eightshift-boilerplate/heading",
+				"attributes": {
+					"headingHeadingContent": "Lorem ipsum dolor sit amet"
+				}
+			},
+			{
+				"name": "eightshift-boilerplate/paragraph",
+				"attributes": {
+					"paragraphParagraphContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam est id semper aliquet. Aenean accumsan lacus justo, a lacinia turpis semper condimentum. "
+				}
+			}
+		]
+	},
+	"attributes": {
+		"accordionItemTriggerContent": {
+			"type": "string"
+		},
+		"accordionItemStartOpen": {
+			"type": "boolean",
+			"default": false
+		},
+		"accordionItemAllowedBlocks": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"eightshift-boilerplate/paragraph",
+				"eightshift-boilerplate/image"
+			]
+		}
+	},
+	"hasInnerBlocks": true,
+	"components": {
+		"trigger": "paragraph"
+	},
+	"resources": {
+		"icon": "<svg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.74997 9H14.2499' stroke='white' stroke-width='1.125' stroke-linecap='round' stroke-linejoin='round'/><path d='M9 3.75L14.25 9L9 14.25' stroke='white' stroke-width='1.125' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+	},
+	"parent": [
+		"eightshift-boilerplate/accordion"
+	]
+}

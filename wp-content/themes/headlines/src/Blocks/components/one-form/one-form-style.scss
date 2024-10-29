@@ -1,0 +1,87 @@
+.one-form {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 4rem;
+	align-items: flex-start;
+
+	padding: 0;
+
+	@include media(large up) {
+		padding: 0;
+	}
+
+	&__content {
+		flex: 1;
+
+		@supports (width: 1cqw) {
+			@container one-form (width < 49rem) {
+				flex-basis: 100%;
+			}
+
+			@container one-form (width >= 49rem) {
+				padding-inline-end: 5.5rem;
+			}
+		}
+	}
+
+	.es-form__fields {
+		--es-forms-background-color: var(--one-form-input-background-color, initial);
+		--es-forms-border-color: var(--one-form-input-border-color, initial);
+		--es-forms-text-color: var(--one-form-text-color, initial);
+
+		@include media(desktop up) {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+
+			[data-field-name='email'] {
+				--es-field-width: 100%;
+				grid-column: 1 / 5;
+
+				grid-row: 1;
+				padding: 0;
+
+				input {
+					padding-inline-end: 9.5rem;
+					min-height: 3.7rem;
+				}
+			}
+
+			[data-field-type='submit'] {
+				--es-field-width: fit-content;
+				padding: 0.3rem;
+				grid-column: 4 / 5;
+				grid-row: 1;
+				justify-self: flex-end;
+			}
+		}
+	}
+
+	.es-input {
+		padding-inline-end: 11rem;
+		min-height: 3rem;
+		background-color: var(--global-colors-white);
+		border-radius: 0.25rem;
+	}
+
+	.es-submit {
+		background-color: var(--global-colors-lime);
+		color: var(--global-colors-green800);
+		border-radius: 0.25rem;
+		min-width: 9rem;
+	}
+
+	.btn {
+		--button-padding: 0.37rem 2rem;
+
+		justify-content: center;
+
+		position: relative;
+		inset-block-start: 1px;
+		inset-inline-end: 1px;
+		
+
+		&:is(button) {
+			--button-width: 100%;
+		}
+	}
+}

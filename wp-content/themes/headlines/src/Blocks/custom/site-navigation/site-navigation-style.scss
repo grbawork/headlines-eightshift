@@ -1,0 +1,101 @@
+.block-site-navigation {
+	position: fixed;
+	inset: 0 0 auto;
+
+	padding-inline: var(--global-grid-side-padding);
+
+	height: var(--global-navbar-height);
+
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+
+	background-color: var(--global-colors-green800);
+	border-bottom: 1px solid rgb(var(--global-colors-gray100-values) / 0);
+
+	backdrop-filter: blur(1.5rem) saturate(1.5) brightness(1.25);
+
+	z-index: var(--global-z-index-header);
+
+	transition: {
+		property: border-color, background-color;
+		timing-function: ease-out;
+		duration: 0.3s;
+	}
+
+	&.is-scrolled {
+		border-bottom-color: var(--global-colors-gray100);
+	}
+
+	&__logo {
+		width: 15rem;
+		max-height: 10rem;
+	}
+
+	&__links {
+		display: none;
+
+		align-items: center;
+		gap: 1.5rem;
+
+		margin-inline-start: auto;
+
+		@include media(desktop up) {
+			display: flex;
+		}
+	}
+
+	&__link {
+		@extend %link-reset;
+
+		letter-spacing: -0.01em;
+		text-underline-offset: 0.1em;
+
+		color: var(--global-colors-white);
+
+		&:hover {
+			color: var(--global-colors-lime);
+		}
+
+		@include media(tablet down) {
+			font-size: 1.75rem;
+		}
+	}
+
+	&__buttons-wrapper {
+		display: flex;
+		justify-content: flex-end;
+		column-gap: 1rem;
+		align-items: center;
+	}
+
+	&__btn-primary,
+	&__btn-secondary {
+		padding: 1rem;
+		line-height: 0.5;
+
+		&:hover {
+			background-color: var(--global-colors-green600);
+			border-color: var(--global-colors-green600);
+			color: var(--global-colors-lime);
+		}
+
+		@include media(tablet down) {
+			display: none;
+		}
+	}
+
+	&__hamburger {
+		margin-inline-start: auto;
+
+		path {
+			stroke: var(--global-colors-lime);
+		}
+	}
+
+	// Move it out of the way of the admin bar.
+	body.admin-bar & {
+		// stylelint-disable-next-line custom-property-pattern
+		top: var(--wp-admin--admin-bar--height);
+	}
+}

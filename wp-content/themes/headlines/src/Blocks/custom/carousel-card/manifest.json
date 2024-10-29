@@ -1,0 +1,89 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/block.json",
+	"blockName": "carousel-card",
+	"blockJsClass": "js-block-carousel-card",
+	"title": "Carousel: Card",
+	"description" : "Carousel card block with custom settings.",
+	"category": "eightshift",
+	"icon": {
+		"src": "es-carousel"
+	},
+	"keywords": [
+		"card",
+		"carousel"
+	],
+	"hasInnerBlocks": true,
+	"attributes": {
+		"carouselCardAllowedBlocks": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"eightshift-boilerplate/card-carousel-item"
+			]
+		},
+		"carouselCardAllowDrag": {
+			"type": "boolean",
+			"default": true
+		},
+		"carouselCardAllowKeyboardControls": {
+			"type": "boolean",
+			"default": true
+		},
+		"carouselCardHeadingSize": {
+			"type": "string",
+			"default": "42-bold"
+		},
+		"carouselCardParagraphSize": {
+			"type": "string",
+			"default": "lg-regular"
+		},
+
+		"carouselCardIconLeftSize": {
+			"type": "string",
+			"default": "1.5"
+		},
+		"carouselCardIconLeftName": {
+			"type": "string",
+			"default": "arrow-left"
+		},
+		"carouselCardIconRightSize": {
+			"type": "string",
+			"default": "1.5"
+		},
+		"carouselCardIconRightName": {
+			"type": "string",
+			"default": "arrow-right"
+		},
+
+		"wrapperBgColorProject": {
+			"type": "string",
+			"default": "blue-light"
+		},
+		"wrapperSpacingTopInLarge": {
+			"type": "number",
+			"default": 7
+		},
+		"wrapperSpacingBottomInLarge": {
+			"type": "number",
+			"default": 9
+		},
+		"wrapperSpacingTopInMobile": {
+			"type": "number",
+			"default": 4.8
+		},
+		"wrapperSpacingBottomInMobile": {
+			"type": "number",
+			"default": 5.3
+		}
+	},
+	"components": {
+		"heading": "heading",
+		"iconLeft": "icon",
+		"iconRight": "icon"
+	},
+	"nodeDependency": [
+		"swiper"
+	]
+}

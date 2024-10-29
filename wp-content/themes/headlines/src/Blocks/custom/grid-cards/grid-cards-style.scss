@@ -1,0 +1,9 @@
+.block-grid-cards {
+	&__inner {
+		display: grid;
+		gap: 2rem;
+		@include media(desktop up) {
+			grid-template-columns: var(--grid-cards-block-template-columns);
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/block.json",
+	"blockName": "grid-cards",
+	"title": "Grid Cards",
+	"description": "Custom card grid layut block.",
+	"category": "eightshift",
+	"icon": {
+		"src": "es-grid"
+	},
+	"keywords": [
+		"grid",
+		"grid cards",
+		"layout"
+	],
+	"hasInnerBlocks": true,
+	"attributes": {
+		"gridCardsGridTemplateColumns": {
+			"type": "string",
+			"default": "2"
+		},
+		"gridCardsAllowedBlocks": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"eightshift-boilerplate/card"
+			]
+		}
+	},
+	"options": {
+		"gridCardsGridTemplateColumns": [
+			{
+				"label": "Two Columns",
+				"value": "2"
+			},
+			{
+				"label": "Three Columns",
+				"value": "3"
+			}
+		]
+	},
+	"variables": {
+		"gridCardsGridTemplateColumns": {
+			"2": [
+				{
+					"variable": {
+						"grid-cards-block-template-columns": "repeat(2, 1fr)"
+					}
+				}
+			],
+			"3": [
+				{
+					"variable": {
+						"grid-cards-block-template-columns": "repeat(3, 1fr)"
+					}
+				}
+			]
+		}
+	}
+}
