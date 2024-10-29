@@ -42,7 +42,7 @@ The environment details are set in the `setup.json` file.
 
 | Environment | URL              | Branch         |
 | ----------- | ---------------- | -------------- |
-| Local       | pip-project.test | feature-branch |
+| Local       | headlines-project.test | feature-branch |
 | Staging     | ...              | staging        |
 | Production  | ...              | main           |
 

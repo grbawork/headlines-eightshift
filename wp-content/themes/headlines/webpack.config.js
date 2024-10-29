@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
 	const projectConfig = {
 		config: {
 			projectDir: __dirname, // Current project directory absolute path.
-			projectUrl: 'pip-project.test', // Used for providing browsersync functionality.
+			projectUrl: 'headlines-project.test', // Used for providing browsersync functionality.
 			projectPath: 'wp-content/themes/headlines', // Project path relative to project root.
 		},
 	};
