@@ -107,7 +107,7 @@ For example, you may have the following situation in your secrets file:
 ```json
 {
   "db": {
-    "name": "pip_project_db",
+    "name": "headlines_project_db",
     "user": "root",
     "pass": "",
     "host": "127.0.0.1"
