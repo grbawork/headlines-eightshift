@@ -1,6 +1,6 @@
 # Headlines web
 
-This is the official repository of the Headlines pip project.
+This is the official repository of the Headlines eightshift project.
 
 ## Requirements
 
