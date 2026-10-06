@@ -1,0 +1,97 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/component.json",
+	"componentName": "one-form",
+	"title": "one Form",
+	"componentClass": "one-form",
+	"example": {
+		"attributes": {
+			"oneFormTheme": "light",
+			"oneFormUse": true
+		}
+	},
+	"hasInnerBlocks": true,
+	"attributes": {
+		"wrapperBgColorProject": {
+			"type": "string",
+			"default": "blue-super-light"
+		},
+		"wrapperSpacingBottomLarge": {
+			"type": "integer",
+			"default": 0
+		},
+		"wrapperSpacingBottomInMobile": {
+			"type": "number",
+			"default": 0
+		},
+		"wrapperSpacingTopInLarge": {
+			"type": "number",
+			"default": 0
+		},
+		"wrapperSpacingBottomInLarge": {
+			"type": "number",
+			"default": 0
+		},
+
+		"oneFormTheme": {
+			"type": "string",
+			"default": "light"
+		},
+
+		"oneFormUse": {
+			"type": "boolean",
+			"default": true
+		},
+		"oneFormFormUse": {
+			"type": "boolean",
+			"default": true
+		},
+		"oneFormFormAllowedBlocks": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": ["eightshift-forms/forms"]
+		}
+	},
+	"options": {
+		"oneFormTheme": [
+			{
+				"label": "Light",
+				"value": "light"
+			},
+			{
+				"label": "Dark",
+				"value": "dark"
+			}
+		]
+	},
+	"variables": {
+		"oneFormTheme": {
+			"light": [
+				{
+					"variable": {
+						"one-form-background-color": "var(--global-colors-white)",
+						"one-form-border-color": "var(--global-colors-white)",
+						"one-form-icon-color": "var(--global-colors-blue-light)",
+						"one-form-icon-background-color": "var(--global-colors-blue-dark)",
+						"one-form-input-background-color": "var(--global-colors-white)",
+						"one-form-input-border-color": "var(--global-colors-grey-light)"
+					}
+				}
+			],
+			"dark": [
+				{
+					"variable": {
+						"one-form-text-color": "var(--global-colors-white)",
+						"one-form-background-color": "var(--global-colors-blue-dark)",
+						"one-form-border-color": "var(--global-colors-white)",
+						"one-form-icon-color": "var(--global-colors-blue-dark)",
+						"one-form-icon-background-color": "var(--global-colors-blue-light)",
+						"one-form-input-background-color": "var(--global-colors-black)",
+						"one-form-input-border-color": "var(--global-colors-grey-blue-darker)"
+					}
+				}
+			]
+		}
+	}
+}

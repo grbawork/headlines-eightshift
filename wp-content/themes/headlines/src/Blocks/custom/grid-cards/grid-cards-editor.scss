@@ -1,0 +1,9 @@
+.block-grid-cards {
+    .block-editor-block-list {
+        &__layout {
+            display: grid;
+            grid-template-columns: var(--grid-cards-block-template-columns);
+            gap: 1.25rem;
+        }
+    }
+}

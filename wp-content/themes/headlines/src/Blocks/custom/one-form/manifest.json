@@ -1,0 +1,19 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/block.json",
+	"blockName": "one-form",
+	"title": "One Form",
+	"description" : "One Form block with custom settings.",
+	"category": "eightshift",
+	"hasInnerBlocks": true,
+	"icon": {
+		"src": "esf-input"
+	},
+	"keywords": [
+		"one",
+		"form",
+		"input"
+	],
+	"components": {
+		"oneForm": "one-form"
+	}
+}

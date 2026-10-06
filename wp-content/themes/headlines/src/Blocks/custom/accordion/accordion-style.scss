@@ -1,0 +1,5 @@
+.block-accordion {
+	@include media (desktop up) {
+		position: relative;
+	}
+ }

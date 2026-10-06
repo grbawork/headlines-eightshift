@@ -1,0 +1,22 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/block.json",
+	"blockName": "cta-panel",
+	"title": "CTA Panel",
+	"description": "CTA panel with custom settings.",
+	"category": "eightshift",
+	"icon": {
+		"src": "es-card"
+	},
+	"keywords": [
+		"Cta",
+		"Call to Action",
+		"Box"
+	],
+	"components": {
+		"logo": "image",
+		"image": "image",
+		"heading": "heading",
+		"paragraph": "paragraph",
+		"button": "button"
+	}
+}

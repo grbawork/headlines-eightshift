@@ -1,0 +1,22 @@
+.block-accordion-item {
+	width: 100%;
+	
+	&__icon-container {
+		border: none;
+		background: none;
+		padding: 0;
+		appearance: none;
+		line-height: 0;
+		z-index: 1;
+
+		cursor: pointer;
+
+		transform: var(--accordion-item-trigger-icon-rotation, rotate(0));
+
+		transition: {
+			property: transform;
+			timing-function: var(--ease-out-back);
+			duration: 0.3s;
+		}
+	}
+}

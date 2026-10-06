@@ -1,0 +1,66 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/block.json",
+	"blockName": "site-navigation",
+	"blockJsClass": "js-block-site-navigation",
+	"title": "Site navigation",
+	"description": "Main site navigation with a logo, links, and mobile menu button.",
+	"category": "eightshift",
+	"icon": {
+		"src": "es-navbar"
+	},
+	"keywords": [
+		"site",
+		"navigation",
+		"navbar"
+	],
+	"example": {
+		"attributes": {
+			"siteNavigationLogoUrl": "https://loremflickr.com/200/150"
+		}
+	},
+	"attributes": {
+		"siteNavigationBgColor": {
+			"type": "string",
+			"default": "green800"
+		},
+		"siteNavigationLinks": {
+			"type": "array",
+			"default": []
+		},
+		"wrapperUse": {
+			"type": "boolean",
+			"default": false
+		},
+		"wrapperNoControls": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"options": {
+		"navbarBgColor": [
+			"black",
+			"green800"
+		]
+	},
+	"variables": {
+		"navbarBgColor": {
+			"green800": [
+				{
+					"variable": {
+						"navbar-bg-color": "var(--global-colors-%value%)",
+						"navbar-bg-link-color": "var(--global-colors-white)",
+						"navbar-button-color": "var(--global-colors-white)",
+						"navbar-button-border-color": "var(--global-colors-white)",
+						"navbar-button-color-hover": "var(--global-colors-lime)",
+						"navbar-button-border-color-hover": "var(--global-colors-lime)"
+					}
+				}
+			]
+		}
+	},
+	"components": {
+		"logo": "image",
+		"buttonPrimary": "button",
+		"buttonSecondary": "button"
+	}
+}

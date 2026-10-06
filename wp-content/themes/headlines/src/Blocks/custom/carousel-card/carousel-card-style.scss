@@ -1,0 +1,66 @@
+@import '~swiper/css';
+@import '~swiper/css/grid';
+
+.block-carousel-card {
+	&__heading {
+		font-size: 2rem;
+		padding-block-end: 1.5rem;
+		text-align: center;
+
+		@include media(tablet up) {
+			padding-block-end: 2rem;
+			max-inline-size: 42.875rem;
+			text-align: left;
+		}
+	}
+
+	&__paragraph {
+		padding-block-end: 2.5rem;
+		max-inline-size: 17.75rem;
+
+		@include media(tablet up) {
+			padding-block-end: 3rem;
+			max-inline-size: 36.5rem;
+		}
+	}
+
+	&__carousel-slider {
+		display: block;
+
+		@include media(desktop up) {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			gap: 2.75rem;
+		}
+	}
+
+	&__carousel-icons {
+		display: flex;
+		justify-content: center;
+		gap: 0.75rem;
+		@include media(tablet up) {
+			justify-content: flex-end;
+		}
+	}
+
+	&__icon {
+		--icon-scoped-border-radius: 100%;
+		--icon-scoped-color: var(--global-colors-white);
+		--icon-scoped-background-fill: var(--global-colors-orange);
+
+		inline-size: 2rem;
+		block-size: 2rem;
+		margin-block-end: 1.5rem;
+		cursor: pointer;
+
+		[dir='rtl'] & {
+			transform: rotate(180deg);
+		}
+	}
+
+	.swiper-button-disabled {
+		--icon-scoped-color: var(--global-colors-blue-mid);
+		--icon-scoped-background-fill: var(--global-colors-white);
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/block.json",
+	"blockName": "carousel-card-item",
+	"title": "Carousel: Card item",
+	"description" : "Part of a card carousel block.",
+	"category": "eightshift",
+	"icon": {
+		"src": "es-column"
+	},
+	"keywords": [
+		"carousel",
+		"card",
+		"item"
+	],
+	"parent": [
+		"eightshift-boilerplate/carousel-card"
+	],
+	"attributes": {
+		"wrapperDisable": {
+			"type": "boolean",
+			"default": true
+		},
+		"wrapperUse": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"components": {
+		"carouselCardItem": "carousel-card-item"
+	}
+}

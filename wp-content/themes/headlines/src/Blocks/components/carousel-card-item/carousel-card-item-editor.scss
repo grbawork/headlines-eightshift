@@ -1,0 +1,33 @@
+.block-carousel-card-item {
+
+	&__carousel-card-item {
+		display: grid;
+		grid-template-columns: 25% 5% 1fr;
+		grid-template-rows: repeat(4, 2rem);
+		border-radius: 0.5rem;
+		column-gap: 1rem;
+		align-items: center;
+
+		transition: {
+			property: border-radius, border;
+			timing-function: var(--ease-out-back);
+			duration: 0.3s;
+		}
+	
+		&:is(div) {
+			block-size: 100%;
+		}
+
+		.block-editor-media-placeholder {
+			min-height: 100%;
+			grid-row: 1/5;
+			grid-column: 1/1;
+			margin-bottom: 0;
+			min-width: 8rem;
+		}
+	}
+
+	.rich-text {
+		grid-column: 3/3;
+	}
+}
